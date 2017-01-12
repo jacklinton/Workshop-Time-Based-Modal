@@ -1,0 +1,1 @@
+document.getElementById("bodyId").innerHTML="<h1>This is the page</h1>"

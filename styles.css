@@ -1,0 +1,9 @@
+body {
+	background-color: blue;
+}
+div {
+	display: inline-block;
+	text-align: center;
+	column-width: 100%;
+	color: red;
+}
