@@ -1,9 +1,28 @@
 body {
 	background-color: blue;
 }
-div {
+
+.redBox {
+	height: 200px;
+	width: 200px;
+	background-color: red;
 	display: inline-block;
-	text-align: center;
-	column-width: 100%;
-	color: red;
+	float: left;
+	margin: 80px 80px;
+	z-index: 1;
+	
+}
+
+.redBoxRotate {
+	animation: redBoxRotate 3s infinite;
+	transform: rotateY(45deg);
+}
+
+@keyframes redBoxRotate {
+	0% {
+		transform: rotateY(45deg);
+	}
+	100% {
+		transform: rotateY(-45deg);
+	}
 }
