@@ -1,17 +1,19 @@
 body {
-	background-color: blue;
+	z-index: 0;
+	
 }
 
 .redBox {
+	z-index: 1;
 	height: 200px;
 	width: 200px;
+	position: fixed;
 	background-color: red;
 	display: inline-block;
 	float: left;
 	margin: 80px 80px;
-	z-index: 1;
 	padding: 30px;
-	
+	opacity: 1;
 }
 
 .redBoxRotate {
@@ -29,3 +31,15 @@ body {
 	}
 }
 
+.modal {
+    display: block; 
+    position: fixed; 
+    z-index: -1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: black;
+    opacity: 0.4;
+}
