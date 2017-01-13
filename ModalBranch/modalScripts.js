@@ -11,12 +11,16 @@ var mainBodyModal = document.getElementById("mainBodyModal")
 
 
 function delayModal(){
-	window.setTimeout(startModal(mainBodyModal, forumButton), 3000)
-	window.setTimeout(startModal(document.getElementById("mainBodyModal").setAttribute("style", "background-color: black; opacity: 0.4;"), 3000))
+	window.setTimeout(function (){
+		mainBodyModal.classList.add("dimMainBody")
+		forumButton.classList.add("rotateForumButton")
+	}, 3000)
+	window.setTimeout(function (){
+		mainBodyModal.setAttribute("style", "background-color: black; opacity: 0.4;")
+		}, 3000)
 }
 
 function startModal(x,y){
-	x.classList.add("dimMainBody")
-	y.classList.add("rotateForumButton")
+	
 }
 

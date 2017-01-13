@@ -68,7 +68,6 @@ a {
 
 .rotateForumButton {
 	animation: rotateForumButton 1s;
-	animation-delay: 3s;
 }
 
 @keyframes rotateForumButton {
@@ -82,7 +81,6 @@ a {
 }
 .dimMainBody {
 	animation: dimMainBody 1s;
-	animation-delay: 3s;
 	display: block; 
     position: fixed; 
     z-index: 0; 
