@@ -1,6 +1,6 @@
 body {
 	z-index: 0;
-	
+	background-image: url("users/user01/images")
 }
 
 .redBox {
@@ -13,7 +13,7 @@ body {
 	float: left;
 	margin: 80px 80px;
 	padding: 30px;
-	opacity: 1;
+	text-align: center;
 }
 
 .redBoxRotate {
@@ -34,7 +34,7 @@ body {
 .modal {
     display: block; 
     position: fixed; 
-    z-index: -1; 
+    z-index: 0; 
     left: 0;
     top: 0;
     width: 100%; 
