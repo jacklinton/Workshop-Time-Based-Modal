@@ -1,35 +1,45 @@
-document.getElementById("navLink").addEventListener("mouseover", function(){
-	document.getElementById("navLink").setAttribute("style", "color: green; background-color: black;")
-	document.getElementById("homeLink").setAttribute("href", "https://www.google.com")
+var homeButton = document.getElementById("navLink")
+var newArticlesButton = document.getElementById("navLink2")
+var contactButton = document.getElementById("navLink3")
+var forumButton = document.getElementById("navLink4")
+var hLink = document.getElementById("homeLink")
+var naLink = document.getElementById("naLink")
+var cLink = document.getElementById("contactLink")
+var fLink = document.getElementById("forumLink")
+
+
+homeButton.addEventListener("mouseover", function(){
+	homeButton.setAttribute("style", "color: green; background-color: black;")
+	hLink.setAttribute("href", "https://www.google.com")
 })
 
-document.getElementById("navLink2").addEventListener("mouseover", function(){
-	document.getElementById("navLink2").setAttribute("style", "color: green; background-color: black;")
-	document.getElementById("naLink").setAttribute("href", "https://www.google.com")
+newArticlesButton.addEventListener("mouseover", function(){
+	newArticlesButton.setAttribute("style", "color: green; background-color: black;")
+	naLink.setAttribute("href", "https://www.google.com")
 })
 
-document.getElementById("navLink3").addEventListener("mouseover", function(){
-	document.getElementById("navLink3").setAttribute("style", "color: green; background-color: black;")
-	document.getElementById("contactLink").setAttribute("href", "https://www.google.com")
+contactButton.addEventListener("mouseover", function(){
+	contactButton.setAttribute("style", "color: green; background-color: black;")
+	cLink.setAttribute("href", "https://www.google.com")
 })
 
-document.getElementById("navLink4").addEventListener("mouseover", function(){
-	document.getElementById("navLink4").setAttribute("style", "color: green; background-color: black;")
-	document.getElementById("forumLink").setAttribute("href", "https://www.google.com")
+forumButton.addEventListener("mouseover", function(){
+	forumButton.setAttribute("style", "color: green; background-color: black;")
+	fLink.setAttribute("href", "https://www.google.com")
 })
 
-document.getElementById("navLink").addEventListener("mouseout", function(){
-	document.getElementById("navLink").setAttribute("style", "color: black; background-color: lightgrey;")
+homeButton.addEventListener("mouseout", function(){
+	homeButton.setAttribute("style", "color: black; background-color: lightgrey;")
 })
 
-document.getElementById("navLink2").addEventListener("mouseout", function(){
-	document.getElementById("navLink2").setAttribute("style", "color: black; background-color: lightgrey;")
+newArticlesButton.addEventListener("mouseout", function(){
+	newArticlesButton.setAttribute("style", "color: black; background-color: lightgrey;")
 })
 
-document.getElementById("navLink3").addEventListener("mouseout", function(){
-	document.getElementById("navLink3").setAttribute("style", "color: black; background-color: lightgrey;")
+contactButton.addEventListener("mouseout", function(){
+	contactButton.setAttribute("style", "color: black; background-color: lightgrey;")
 })
 
-document.getElementById("navLink4").addEventListener("mouseout", function(){
-	document.getElementById("navLink4").setAttribute("style", "color: bkacl; background-color: orange;")
+forumButton.addEventListener("mouseout", function(){
+	forumButton.setAttribute("style", "color: bkacl; background-color: orange;")
 })
