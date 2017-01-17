@@ -30,32 +30,30 @@ a {
 
 .leftSideButtons {
 	color: black;
-	background-color: lightgrey;
 	height: 20px;
 	margin-left: 10px;
 	margin-right: 10px;
-	margin-bottom: 10px;
 	float: left;
 	padding-top: 10px;	
 	padding-bottom: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
+	z-index: 0;
 }
 
 
 .rightSideButtons {
 	color: black;
-	border-color: lightgrey;
 	height: 20px;
 	margin-left: 10px;
 	margin-right: 10px;
-	margin-bottom: 10px;
 	float: right;
 	top: 0;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
+	z-index: 1;
 }
 
 .forumButton {
@@ -68,6 +66,8 @@ a {
 
 .rotateForumButton {
 	animation: rotateForumButton 1s;
+	background-color: red;
+	color: yellow;
 }
 
 @keyframes rotateForumButton {
@@ -97,6 +97,34 @@ a {
 		opacity: 0;
 	}
 	100%{
-		opacity: 0.4;
+		opacity: 0.6;
+	}
+}
+
+.redBox {
+	background-color: red;
+	margin-right: 100px;
+	width: 150px;
+	height: 270px;
+	z-index: 1;
+	float: right;
+	clear: both;
+	animation: slideInBox 1s;
+	position: relative;
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+	color: orange;
+}
+	
+@keyframes slideInBox {
+	from{
+		left: 300px;
+		transform: rotateX(0deg);
+	}
+	to{
+		left: 0px;
+		transform: rotateX(360deg);
 	}
 }
